@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- Ovan Develop -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEO Launch Documentation</title>
+  <script src="main.js" defer></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+
+    h1,
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+
+    table {
+      width: 80%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      color: #555;
+    }
+
+    td {
+      background-color: #fafafa;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #f8f8f8;
+    }
+
+    tr:hover {
+      background-color: #eaeaea;
+    }
+
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .table-description {
+      font-size: 0.9rem;
+      color: #777;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>SEO Launch Documentation</h1>
+  <p>Complete guide to using the script " SEO Launch "</p>
+  <table>
+    <thead>
+      <tr>
+        <th>HTML Element</th>
+        <th>Class</th>
+        <th>Purpose</th>
+        <th>Example Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>&lt;a&gt;</strong> (Anchor Tag)</td>
+        <td>sl-title</td>
+        <td>The title of the webpage that will be used in meta tags like <code>og:title</code>,
+          <code>twitter:title</code>.</td>
+        <td><code>Ovan Develop</code></td>
+      </tr>
+      <tr>
+        <td><strong>&lt;p&gt;</strong> (Paragraph Tag)</td>
+        <td>sl-description</td>
+        <td>Short description of the webpage that will be used in meta tags like <code>description</code>,
+          <code>og:description</code>, <code>twitter:description</code>.</td>
+        <td><code>Web Design &amp; Programming</code></td>
+      </tr>
+      <tr>
+        <td><strong>&lt;img&gt;</strong> (Image Tag)</td>
+        <td>sl-image</td>
+        <td>The image URL to be used in meta tags like <code>og:image</code>, <code>twitter:image</code>.</td>
+        <td><code>https://ovan.dev/img/OvanDevelop.png</code></td>
+      </tr>
+      <tr>
+        <td><strong>&lt;input&gt;</strong> (Canonical URL)</td>
+        <td>sl-canonical</td>
+        <td>The canonical URL of the webpage to prevent duplicate content issues. This value will be used in
+          <code>rel="canonical"</code>.</td>
+        <td><code>https://ovan.dev</code></td>
+      </tr>
+      <tr>
+        <td><strong>&lt;input&gt;</strong> (Checkbox for Robots)</td>
+        <td>sl-index-follow</td>
+        <td>Indicates whether the page should be indexed and followed by search engines. If checked, the value will be
+          <code>index,follow</code>.</td>
+        <td><code>index,follow</code></td>
+      </tr>
+      <tr>
+        <td><strong>&lt;input&gt;</strong> (Checkbox for No Index, No Follow)</td>
+        <td>sl-noindex-nofollow</td>
+        <td>Indicates whether the page should not be indexed and not followed by search engines. If checked, the value
+          will be <code>noindex,nofollow</code>.</td>
+        <td><code>noindex,nofollow</code></td>
+      </tr>
+      <tr>
+        <td><strong>&lt;input&gt;</strong> (Checkbox for No Index, Follow)</td>
+        <td>sl-noindex-follow</td>
+        <td>Indicates whether the page should not be indexed but followed by search engines. If checked, the value will
+          be <code>noindex,follow</code>.</td>
+        <td><code>noindex,follow</code></td>
+      </tr>
+      <tr>
+        <td><strong>&lt;input&gt;</strong> (Checkbox for Index, No Follow)</td>
+        <td>sl-index-nofollow</td>
+        <td>Indicates whether the page should be indexed but not followed by search engines. If checked, the value will
+          be <code>index,nofollow</code>.</td>
+        <td><code>index,nofollow</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="table-description">
+    <p><strong>Note:</strong> The values from the checkboxes determine the value of the <code>robots</code> meta tag.
+      Only one checkbox should be selected at a time.</p>
+  </div>
+  <hr>
+  <h2>HTML Structure Example</h2>
+  <p>The following HTML structure shows the elements and classes used in the meta tag generator:</p>
+
+  <section style="text-align:center;">
+    <a class="sl-title" href="https://ovan.dev">Ovan Develop</a>
+    <p class="sl-description">Web Design & Programming</p>
+    <img class="sl-image" src="https://ovan.dev/img/OvanDevelop.png" width="100" /><br>
+    <input class="sl-canonical" type="url" value="https://ovan.dev" /><br>
+    <input class="sl-index-follow" type="checkbox" value="index,follow" checked />
+    <input class="sl-noindex-nofollow" type="checkbox" value="noindex,nofollow" /><br>
+    <input class="sl-noindex-follow" type="checkbox" value="noindex,follow" />
+    <input class="sl-index-nofollow" type="checkbox" value="index,nofollow" />
+  </section>
+  <br><br>
+  <footer dir="ltr" style="text-align:center;">
+    <span>
+      &nbsp;2025-All Right Resered. By <a href="https://ovan.dev/ar" target="_blank">RezaEi.Ali</a>
+    </span>
+  </footer>
+</body>
+
+</html>
